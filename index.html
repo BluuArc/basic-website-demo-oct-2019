@@ -1,8 +1,121 @@
 <html>
   <head>
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+
+    <!-- CSS stylesheets for Bootstrap (https://getbootstrap.com/) and Materialize (https://materializecss.com/) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   </head>
   <body>
-    <h1>Welcome to my website!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <!-- source: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+      <a class="navbar-brand" href="#">Josh's Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>About me</h2>
+          <p>I make websites!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Skills</h2>
+          <ul class="browser-default">
+            <li>Java</li>
+            <li>C++</li>
+            <li>Wizardry 101</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>Projects</h2>
+        </div>
+        <!-- Josh's actual website card -->
+        <div class="col-xs-12 col-md-6 project-card">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Josh's Actual Website</span>
+              <p>My actual website created with Vue.js.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/BluuArc/bluuarc.github.io">Repository</a>
+              <a href="https://joshuacastor.me/">Web Site</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LUG DND Webapp card -->
+        <div class="col-xs-12 col-md-6 project-card">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">LUG DND Webapp</span>
+              <p>Collaborative project in LUG led by Amy Ngo to create a web app using Python Flask.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/lugatuic/LUG_Dungeons_and_Dragons_Webbapp">Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ben's website card -->
+        <div class="col-xs-12 col-md-6 project-card">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Ben's Website</span>
+              <p>Something he threw together in an hour.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/Benbigmac/Benbigmac.github.io">Repository</a>
+              <a href="https://benbigmac.github.io/">Web Site</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- this website card -->
+        <div class="col-xs-12 col-md-6 project-card">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">This Website</span>
+              <p>You're currently viewing this website.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/BluuArc/basic-website-demo">Repository</a>
+              <a href="http://joshuacastor.me/basic-website-demo/">Web Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts to support bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
   </body>
 </html>
